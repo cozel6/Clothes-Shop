@@ -1,18 +1,49 @@
-## Getting Started
+# ClothesShop Console Application
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Introduction
+This project is a **console-based** application developed for the **Java OOP** course, serving as an **assignment** to practice fundamental object-oriented programming concepts such as encapsulation, inheritance, polymorphism, and abstraction.
+
+## Overview
+The application manages an inventory of clothing and footwear items, providing functionalities to add, remove, update, filter, and apply discounts. The codebase is structured around core OOP principles.
+
+## Requirements
+- **Java 8** or newer
+- A Java-compatible IDE (VS Code, IntelliJ, Eclipse) or the command line
 
 ## Folder Structure
+| Folder | Description |
+|--------|-------------|
+| **src** | Holds the Java source files (classes, enums, etc.) |
+| **lib** | Contains any external libraries (if needed) |
+| **bin** | Stores compiled `.class` files |
 
-The workspace contains two folders by default, where:
+## How to Compile and Run
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+### Compilation
+Open a terminal in the project's root directory and run:
+```bash
+javac -d bin src/consoleappshop/*.java
+```
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+### Execution
+Run the main class with:
+```bash
+java -cp bin consoleappshop.Main
+```
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Main Features
+- ✨ **Add a product** (T-shirt, blouse, pants, footwear, etc.)
+- 🗑️ **Remove a product** by name
+- 📝 **Update** product price and quantity
+- 💰 **Apply discounts** (first and second discount)
+- 📊 **Generate reports** by category
+- 🔍 **Filter products** by name, price, color, size, and quantity
+- 📋 **List** all products in the inventory
 
-## Dependency Management
+## Best Practices
+- To avoid character encoding issues (especially with diacritics), make sure your files are saved in UTF-8.
+- The project is organized to meet the Java OOP course requirements and can be further extended based on future needs.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+---
+
+© 2025 Java OOP Course. This project is provided as an assignment to practice the basics of object-oriented programming.
